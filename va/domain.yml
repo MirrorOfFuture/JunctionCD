@@ -1,0 +1,73 @@
+intents:
+  - affirm
+  - deny
+  - greet
+  - goodbye
+  - thanks
+  - whoareyou
+  - whattodo
+  - overall_status
+  - one_wind_generator_status
+  - future_predict
+
+actions:
+  - utter_answer_affirm
+  - utter_answer_deny
+  - utter_answer_greet
+  - utter_answer_goodbye
+  - utter_answer_thanks
+  - utter_answer_whoareyou
+  - utter_answer_whattodo
+  - utter_answer_overall_status
+  - utter_answer_one_wind_generator
+  - utter_future_predict
+  - utter_start_contingency_plan
+  - utter_answer_replace_fan
+responses:
+  utter_answer_affirm:
+    - text: "嗯嗯，好的！"
+    - text: "嗯嗯，很开心能够帮您解决问题~"
+    - text: "嗯嗯，还需要什么我能够帮助您的呢？"
+
+  utter_answer_greet:
+    - text: "您好！请问我可以帮到您吗？"
+    - text: "您好！很高兴为您服务。"
+
+  utter_answer_goodbye:
+    - text: "再见"
+    - text: "拜拜"
+    - text: "期待下次再见！"
+    - text: "嗯嗯，下次需要时随时记得我哟~"
+    - text: "see you!"
+
+  utter_answer_deny:
+    - text: "好的"
+
+  utter_answer_thanks:
+    - text: "嗯呢。不用客气~"
+    - text: "这是我应该做的，主人~"
+    - text: "嗯嗯，合作愉快！"
+
+  utter_answer_whoareyou:
+    - text: "您好！我是您的风电场维护AI助理"
+
+  utter_answer_whattodo:
+    - text: "您好！很高兴为您服务，关于风电场维护的问题都可以问我。"
+
+  utter_default:
+    - text: "没听懂，请换种说法吧~"
+
+  utter_answer_overall_status:
+    - text: "当前风场总体运行情况良好，目前没有系统告警产生，最近半小时，发现19号风机温度偏高，偏离了正常波动范围10%，暂时没有产生告警，可能存在潜在风险，您需要进一步查看吗？"
+
+  utter_answer_one_wind_generator:
+    - text: "根据经验，分析19号风机散热风扇转速偏低，数据显示该风扇存在老化情况，超出了预定服役时间，应及时更换，请指示是否更换。"
+
+  utter_answer_replace_fan:
+    - text: "已经向系统发起更换申请。"
+
+  utter_future_predict:
+    - text: "最新天气预报显示，在风场范围内，未来24小时内有暴雨橙色预警，可能会造成山体灾害，影响风场运行，建议启动应急预案，请指示是否启动应急预案？"
+
+  utter_start_contingency_plan:
+    - text: "已启动应预案，通知到相关人员，我将密切为您关注情况发展。"

@@ -1,0 +1,13 @@
+language: zh
+
+pipeline:
+- name: JiebaTokenizer
+- name: CRFEntityExtractor
+- name: CountVectorsFeaturizer
+  OOV_token: oov
+  token_pattern: '(?u)\b\w+\b'
+- name: EmbeddingIntentClassifier
+policies:
+  - name: MemoizationPolicy
+  - name: KerasPolicy
+  - name: MappingPolicy
